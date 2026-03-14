@@ -609,7 +609,7 @@
         Sometimes the best way to understand a tool is to build it yourself. I spent a weekend writing a minimal SSG —
         no frameworks, no build chains — and learned more about templating than two years of using existing tools.
       </p>
-      <a class="read-link" id="heroLink" href="post?slug=zero-dependency-ssg">
+      <a class="read-link" id="heroLink" href="post.html?slug=zero-dependency-ssg">
         Read the post
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M3 8h10M9 4l4 4-4 4" />
@@ -621,11 +621,11 @@
     <div class="about-strip" id="about">
       <div class="avatar">🌿</div>
       <div class="about-text">
-        <h2>Hey, I'm Alex.</h2>
+        <h2>hi im vik</h2>
         <p>
-          Software engineer writing about systems, frontend craft, and things I find interesting.
-          I work mostly in TypeScript and Go. Sometimes I write deeply, sometimes I just share a quick note.
-          <a href="#">More about me →</a>
+          curious dude who is a little too curious for his good.
+          i like ctfs, i like reading and writing writeups, i also talk on stage whenever given a chance.
+          <a href="https://www.linkedin.com/in/vikhyat-shajee-nambiar/">More about me →</a>
         </p>
       </div>
     </div>
@@ -708,7 +708,7 @@
               ${featured.tags.map(t => `<span class="tag">${t.charAt(0).toUpperCase() + t.slice(1)}</span>`).join('')}
             `;
             heroExcerpt.textContent = featured.excerpt;
-            heroLink.href = `post?slug=${featured.slug}`;
+            heroLink.href = `post.html?slug=${encodeURIComponent(featured.slug)}`;
           }
 
           // Sort posts by date (newest first)
@@ -739,7 +739,7 @@
             li.dataset.tags = post.tags.join(',');
             li.style.animationDelay = `${i * 0.05}s`;
             const a = document.createElement('a');
-            a.href = `post?slug=${post.slug}`;
+            a.href = `post.html?slug=${encodeURIComponent(post.slug)}`;
             a.className = 'post-item-link';
             a.innerHTML = `
               <div class="post-tags">
