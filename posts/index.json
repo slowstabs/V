@@ -1,6 +1,6 @@
 [
   {
-    "slug": "2 Layer Security",
+    "slug": "2-layer-security",
     "title": "2 Layer Security",
     "date": "2026-03-14",
     "tags": ["dfir-labs"],
@@ -8,7 +8,7 @@
     "featured": true
   },
   {
-    "slug": "Hello World - Andriod - Escath",
+    "slug": "hello-world-android-escath.md",
     "title": "Hello World - Andriod - Escath",
     "date": "2026-03-13",
     "tags": ["android", "ctf"],
